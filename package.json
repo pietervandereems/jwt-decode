@@ -1,0 +1,27 @@
+{
+  "name": "jwt",
+  "version": "1.0.0",
+  "description": "Simple jwt decoder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist:clean": "rm -r dist/*",
+    "dist:cp": "cp css/* dist/. && cp src/index.html dist/. ",
+    "build": "npm run dist:clean && npm run dist:cp && webpack --mode development",
+    "build:prod": "npm run dist:clean && npm run dist:cp && webpack --mode production"
+  },
+  "keywords": [
+    "jwt"
+  ],
+  "author": "Pieter van der Eems <github@eemco.nl>",
+  "license": "AGPL-3.0-or-later",
+  "devDependencies": {
+    "browserslist": "^4.16.6",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "jwt-decode": "^3.1.2",
+    "string.ify": "^1.0.64"
+  }
+}
